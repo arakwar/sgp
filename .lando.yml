@@ -1,0 +1,16 @@
+name: sgp
+recipe: lamp
+
+# Détermine l'URL du projet sur votre poste
+proxy:
+  appserver:
+    - edm.lndo.site
+    - rdl.lndo.site
+    - matane.lndo.site
+
+
+config:
+  webroot: .
+  php: '5.6'
+  database: mariadb
+  xdebug: false

@@ -4,6 +4,12 @@
 // Yii::setPathOfAlias('local','path/to/local-folder');
 Yii::setPathOfAlias('chartjs', dirname(__FILE__).'/../extensions/chartjs');
 
+$database = require(dirname(__FILE__).DIRECTORY_SEPARATOR.DOMAINE.DIRECTORY_SEPARATOR.'main_db.php');
+
+if(YII_DEBUG){
+	$database = require(dirname(__FILE__).DIRECTORY_SEPARATOR.DOMAINE.DIRECTORY_SEPARATOR.'main_db_dev.php');
+}
+
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 //return array(

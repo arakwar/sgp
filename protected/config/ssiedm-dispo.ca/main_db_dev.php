@@ -1,9 +1,9 @@
 <?php
 return array(
-	'connectionString' => 'mysql:host=localhost;dbname=sgp_hg',
+	'connectionString' => 'mysql:host=database;dbname=sgp_edm',
 	'emulatePrepare' => true,
-	'username' => 'sgp_externe',
-	'password' => 'fJe2M2Ny6yrHBWYF',
+	'username' => 'root',
+	'password' => '',
 	'charset' => 'utf8',
  	'enableProfiling'=>true,
  	'enableParamLogging'=>true
