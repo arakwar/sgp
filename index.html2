@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>Site Maintenance</title>
+    <style type="text/css">
+      body { text-align: center; padding: 150px; }
+      h1 { font-size: 50px; }
+      body { font: 20px Helvetica, sans-serif; color: #333; }
+      #article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+      a { color: #dc8100; text-decoration: none; }
+      a:hover { color: #333; text-decoration: none; }
+    </style>
+
+</head>
+<body>
+    <div id="article">
+    <h1>Le site est en cours de maintenance!</h1>
+    <div>
+        <p>Afin d'améliorer votre expérience avec l'application, nous réalisons une importante mise à jour qui malheureusement nous oblige à mettre le site hors ligne quelques minutes. En cas d'urgence, vous pouvez nous rejoindre par courriel au info@swordware.com. La maintenance devrait être terminée Dimanche le 7 mai, à 12:00 (Heure de l'Est). Merci pour votre patience.</p>
+    </div>
+    </div>
+</body>
+</html>

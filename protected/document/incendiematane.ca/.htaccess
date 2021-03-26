@@ -1,0 +1,5 @@
+allow from all
+<FilesMatch "\.(?i:png|bmp|jpeg|jpg|xlsx|xls|docx|doc|txt|pdf|zip)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>

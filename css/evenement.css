@@ -1,0 +1,21 @@
+#evenement-form div.row #tblUsagers,
+#evenement-form div.row #tblInvites,
+#evenement-form div.row #groupe,
+#evenement-form div.row #equipe,
+#groupe-form div.row #usagers
+{
+	display:inline-block;
+	width:190px;
+	height:200px;
+	overflow:auto;
+	vertical-align:top;
+}
+
+#evenement-form div.row #tblUsagers label, #evenement-form div.row #tblInvites label{
+	color:#999;	
+}
+.enTeteSec.centreRRH.milieu
+{
+  	margin-left:-4px;
+ 	margin-right:-4px;
+}

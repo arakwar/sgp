@@ -1,0 +1,19 @@
+.horaireSemaine{
+	border-collapse:collapse;
+}
+.horaireSemaine td{
+	width:168px;
+}
+.horaireSemaine th{
+	text-align:center;
+}
+.horaireSemaine td, .horaireSemaine th{
+	border-style:solid;
+	border-width:thin;
+	border-color:#000;
+}
+.quartSemaine{
+	padding:5px;
+	margin-bottom:10px;
+	width:158px;
+}

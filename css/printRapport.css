@@ -1,0 +1,11 @@
+#topMenu, #footer, .form div.row, .styleButtons{
+	display:none;	
+}
+div.form{
+	border:none;
+	background:none;		
+}
+.pageBreak{
+	display: block; 
+	page-break-after: auto;
+}

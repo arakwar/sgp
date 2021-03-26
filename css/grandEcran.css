@@ -1,0 +1,27 @@
+ul.grilleHoraire, ul.grilleHoraire ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+ul.grilleHoraire > li {
+	display: inline-block;
+	vertical-align:top;
+}
+ul.grilleHoraire li.posteHoraire, ul.grilleHoraire li.poste{
+	width:80px;
+	height:30px;
+}
+ul.grilleHoraire li.posteHoraire {
+	background-image:url('../images/degrade.png');
+	line-height:30px;
+	border-bottom:black solid thin;
+	border-right:black solid thin;
+}
+ul.grilleHoraire li.quart span, ul.grilleHoraire li.poste span{
+	display:none;
+}
+ul.grilleHoraire > li:first-child li.quart span, ul.grilleHoraire > li:first-child li.poste span{
+	/*display:inline;*/
+}

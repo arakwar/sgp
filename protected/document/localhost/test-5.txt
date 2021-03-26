@@ -1,0 +1,450 @@
+2013/07/18 12:03:38 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : 400 (22)
+Usager #72
+nbrPompier : 10
+nbrEquipe  : 42
+testMinimum : 10
+
+in /home/sgpsms/public_html/sgp/protected/controllers/DispoFDFController.php (144)
+in /home/sgpsms/public_html/sgp/index.php (16)
+2013/07/24 10:56:19 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #16
+nbrPompier : 19
+nbrEquipe  : 35
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/24 10:56:23 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #16
+nbrPompier : 11
+nbrEquipe  : 35
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/24 11:55:24 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #45
+nbrPompier : 9
+nbrEquipe  : 35
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/24 11:55:42 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #45
+nbrPompier : 12
+nbrEquipe  : 35
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/24 16:37:56 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #50
+nbrPompier : 13
+nbrEquipe  : 35
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/24 19:01:57 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #15
+nbrPompier : 14
+nbrEquipe  : 35
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/24 19:18:09 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #10
+nbrPompier : 10
+nbrEquipe  : 35
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/24 19:18:09 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #10
+nbrPompier : 20
+nbrEquipe  : 35
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/24 19:18:10 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #10
+nbrPompier : 15
+nbrEquipe  : 35
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/25 07:31:32 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #53
+nbrPompier : 18
+nbrEquipe  : 35
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/25 19:34:57 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #36
+nbrPompier : 15
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/26 11:03:17 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #39
+nbrPompier : 14
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/26 11:03:17 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #39
+nbrPompier : 20
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/26 11:03:18 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #39
+nbrPompier : 15
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/26 11:03:18 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #39
+nbrPompier : 16
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/26 11:03:18 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #39
+nbrPompier : 21
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/26 11:03:20 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #39
+nbrPompier : 17
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/26 11:13:37 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #13
+nbrPompier : 22
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/26 15:05:43 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #47
+nbrPompier : 18
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/26 15:05:45 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #47
+nbrPompier : 23
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/26 16:45:18 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #31
+nbrPompier : 19
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/26 22:08:26 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #50
+nbrPompier : 19
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/27 12:08:29 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #27
+nbrPompier : 18
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/27 12:08:30 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #27
+nbrPompier : 18
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/27 15:23:00 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #30
+nbrPompier : 19
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/27 15:23:04 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #30
+nbrPompier : 19
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/27 15:23:06 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #30
+nbrPompier : 19
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/27 16:02:31 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #54
+nbrPompier : 19
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/27 16:02:32 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #54
+nbrPompier : 20
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/27 16:02:33 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #54
+nbrPompier : 20
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/27 16:26:36 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #7
+nbrPompier : 20
+nbrEquipe  : 33
+testMinimum : 9
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/28 07:46:15 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #50
+nbrPompier : 20
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/28 07:46:17 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #50
+nbrPompier : 19
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/28 09:08:43 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #30
+nbrPompier : 20
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/28 09:08:46 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #30
+nbrPompier : 19
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/28 10:42:45 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #16
+nbrPompier : 21
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/28 10:42:45 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #16
+nbrPompier : 20
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/28 13:14:46 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #24
+nbrPompier : 22
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/28 13:14:48 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #24
+nbrPompier : 21
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/28 18:30:48 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #50
+nbrPompier : 22
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/28 21:13:13 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #42
+nbrPompier : 23
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/29 09:54:12 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : A (1)
+Usager #16
+nbrPompier : 20
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/29 11:04:42 [info] [DispoFDF] Rapport du minimum FDF : ('0')
+Équipe de garde : B (2)
+Usager #12
+nbrPompier : 15
+nbrEquipe  : 33
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/29 13:07:09 [info] [DispoFDF] Rapport du minimum FDF : ('2')
+Équipe de garde : B (2)
+Usager #2
+nbrPompier : 6
+nbrEquipe  : 16
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/29 13:16:09 [info] [DispoFDF] Rapport du minimum FDF : ('2')
+Équipe de garde : B (2)
+Usager #46
+nbrPompier : 8
+nbrEquipe  : 16
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/29 13:18:36 [info] [DispoFDF] Rapport du minimum FDF : ('1')
+Équipe de garde : A (1)
+Usager #8
+nbrPompier : 7
+nbrEquipe  : 17
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/29 13:18:45 [info] [DispoFDF] Rapport du minimum FDF : ('1')
+Équipe de garde : A (1)
+Usager #39
+nbrPompier : 8
+nbrEquipe  : 17
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/29 13:20:04 [info] [DispoFDF] Rapport du minimum FDF : ('1')
+Équipe de garde : A (1)
+Usager #8
+nbrPompier : 7
+nbrEquipe  : 17
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)
+2013/07/29 13:20:13 [info] [DispoFDF] Rapport du minimum FDF : ('1')
+Équipe de garde : A (1)
+Usager #39
+nbrPompier : 8
+nbrEquipe  : 17
+testMinimum : 10
+
+in /var/www/vhosts/sgp-sms.ca/sgp2/protected/controllers/DispoFDFController.php (144)
+in /var/www/vhosts/sgp-sms.ca/sgp2/index.php (17)

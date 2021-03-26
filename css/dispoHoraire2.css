@@ -1,0 +1,9 @@
+.toutclock, .clock{
+	display:none;	
+}
+
+.SSCal_conteneur2 .SSCal_table td div.caseNoire div.caseDispo{
+	background:none;
+	background-image:url(../images/crochet.png);
+	background-repeat:no-repeat;
+}

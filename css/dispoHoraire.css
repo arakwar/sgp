@@ -1,0 +1,172 @@
+#btnControl{
+	width:30px;
+	float:left;
+	height:500px;
+}
+
+#tab2{
+	display:none;
+}
+
+div.vertical-text {
+	color:#333;
+	display:block;
+	bottom:0;
+	width:30px;
+	font-size:24px;
+	font-weight:normal;
+	/*text-shadow: 0px 0px 1px #333;*/
+	background-image:url('../images/dispo_jour.png');
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+
+div.vertical-text.dispo{
+	background-position:5px -140px;
+	height:150px;
+	margin-top:60px;
+}
+
+div.vertical-text.parDefaut{
+	background-position:5px 10px;
+	height:130px;
+}
+
+div.vertical-text.active{
+	border-top: 1px black solid;
+	border-left: 1px black solid;
+	border-bottom: 1px black solid;
+	background-color:#7F0808;
+}
+div.vertical-text.dispo.active{
+	background-position:-43px -140px;
+}
+
+div.vertical-text.parDefaut.active{
+	background-position:-43px 10px;
+}
+
+/*SSCal*/
+/*div conteneur du calendrier*/
+.SSCal_conteneur2{
+	min-width:400px;
+	float:left;
+}
+/*En tête*/
+.SSCal_conteneur2 .SSCal_header{
+	height:34px;
+	font-size : 24px;
+}
+
+/*Corps*/
+.SSCal_conteneur2 .SSCal_table td {
+	border-left:solid thin #000;
+	padding:0;
+}
+
+.SSCal_conteneur2 .SSCal_table td > div{
+	width :140px;
+	font-weight:bold;
+	text-align:center;
+	/*cursor:pointer;*/
+	height:30px;
+	line-height:30px;
+	border-bottom:solid thin #000;
+	background-image:url('../images/degrade.png');
+	background-repeat:repeat-x;
+	position:relative;
+}
+.SSCal_conteneur2 .SSCal_table td div.grille{
+	background:none;
+	border-bottom:dotted thin black;
+	border-top:solid thin black;
+	height:10px;
+	margin-bottom:9px;
+	width:100%;
+}
+
+.SSCal_conteneur2 .SSCal_table td div.case{
+	background-image:url('../images/degrade.png');
+}
+
+.SSCal_conteneur2 .SSCal_table td div.label{
+	background:none;
+	border:none;
+}
+.SSCal_conteneur2 .SSCal_table td div.ligne{
+	padding-right:25px;
+}
+.SSCal_conteneur2 .SSCal_table td div.heure{
+	/*display:none;*/
+}
+.SSCal_conteneur2 .SSCal_table td div.heure span.heureDebut{
+	position:absolute;
+	top:-9px;
+	left:6px;
+}
+.SSCal_conteneur2 .SSCal_table td div.heure.opened span.heureFin{
+	display:block;
+	position:absolute;
+	bottom:-9px;
+	left:6px;
+}
+.SSCal_conteneur2 .SSCal_table td div.heure span.heureFin{
+	display:none;
+}
+.SSCal_conteneur2 .SSCal_table td div.heure.opened{
+	display:block;
+}
+.SSCal_conteneur2 .SSCal_table td div.caseNoire{
+	width:70px;
+	left:35px;
+	margin: 0 10px;
+	border-left:1px solid black;
+	border-right:1px solid black;
+	height:100%;
+	position:relative;
+	display:inline-block;
+}
+.SSCal_conteneur2 .SSCal_table td div.caseNoire div.caseDispo{
+	background-color:#000;
+	position:absolute;
+	width:70px;
+}
+.SSCal_conteneur2 .SSCal_table td div > img{
+	height:25px;
+	cursor:pointer;
+	float:left;
+}
+.SSCal_conteneur2 .SSCal_table td div.caseNoire.opened{
+	background-image:url(../images/grilleDispoHoraire.png);
+}
+.SSCal_conteneur2 .SSCal_table td div.caseNoire div.caseDispo{
+	overflow:hidden;
+}
+.SSCal_conteneur2 .SSCal_table td div.caseNoire div.caseDispo .ui-resizable-handle{
+	background-color:#fff;
+	height:8px;
+}
+.SSCal_conteneur2 .SSCal_table td div.caseNoire div.caseDispo.ui-state-disabled{
+	opacity:1;
+}
+div.caseDispo div.petitx{
+	height:9px;
+	width:9px;
+	margin:-5px auto 0;
+	position:relative;
+	top:50%;
+	display:none;
+}
+div.opened div.petitx{
+	display:block;
+}
+div.modifiable div.petitx{
+	background-image:url('../images/petitx.gif');
+}
+div.ajaxLoading{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:1001;
+	background-color:rgba(0,0,0,0.5);
+}

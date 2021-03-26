@@ -1,0 +1,25 @@
+.horaireGE{
+	float:none;
+	margin:auto;
+}
+
+.horaireGE h1{
+	text-align:center;	
+}
+
+.geHoraireGE.SSCal_table_h td div{
+	width:166px;
+	font-size:1.3em;
+}
+
+.geHoraireGE.SSCal_table_h td div.14{
+	width:93px;
+	font-size:1.3em;
+}
+
+.geHoraireGE.deuxieme{
+	margin-top:15px;
+}
+table.geHoraireGE{
+	width:100%;	
+}

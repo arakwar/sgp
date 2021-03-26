@@ -1,0 +1,26 @@
+#formRapportComplet #result table{
+	display:block;
+	width:100%;
+	max-width:1168px;
+	overflow:auto;	
+}
+#formRapportComplet #result table th{
+	border:1px solid #000;
+	background-color:#a70d0d;
+	background-image:url("../images/degradeRouge34.png");
+	background-repeat:repeat-x;
+	background-position:bottom;
+	color:#FFF;
+}
+#formRapportComplet #result table th.equipeTitre{
+	text-align:center;
+	font-size:1.5em;
+	padding-top:7px;
+	padding-bottom:7px;
+}
+#formRapportComplet #result table td{
+	border:1px solid #000;
+}
+.pageBreak{
+	display:none;
+}

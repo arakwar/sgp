@@ -1,0 +1,171 @@
+.SSCal_table_h td {
+	border-left:solid thin #000;
+	padding:0;
+}
+
+.SSCal_table_h td div{
+	width :74.5px;
+	font-weight:bold;
+	text-align:center;
+	/*cursor:pointer;*/
+	height:30px;
+	line-height:30px;
+	border-bottom:solid thin #000;
+	background-image:url('../images/fondBlancTranslucide.png');
+	position:relative;
+}
+
+.SSCal_table_h td div.case{
+	background-image:url('../images/degrade.png');
+}
+
+.SSCal_table_h td div.label{
+	background:none;
+	border:none;
+}
+.SSCal_table_h td div.ligne{
+	padding-right:25px;
+}
+
+.SSCal_table_h .tablRangee{
+	background-image:url('../images/fondBlancTranslucide.png');
+}
+
+.SSCal_table_h table{
+	border-top:solid thin #000;
+	border-right:solid thin #000;
+	padding:0;
+	margin:0;
+}
+
+.SSCal_table_h td div.jour {
+	width:120px;
+}
+.SSCal_table_h td div.caseDispo{
+	width:auto;
+	height:309px;
+	border:none;
+	overflow:scroll;
+}
+.SSCal_table_h td div.enligne{
+	float:left;
+	height:auto;
+	background:none;
+	border:none;
+}
+.SSCal_table_h td div.ddedit_container{
+	min-width:200px;
+	width:auto;
+	height:auto;
+	background-color:#FFF;
+	border:solid thin black;
+}
+.SSCal_table_h td div.ddedit_item{
+	background:none;
+	border:none;
+	width:auto;	
+	height:20px;
+	line-height:20px;
+	padding-left:2px;
+	padding-right:2px;
+	text-align:left;
+}
+.SSCal_table_h td div.ddedit_item.nonPoste{
+	color:#999;
+}
+.SSCal_table_h td div.ddedit_item .heures, .SSCal_table_h td div.ddedit_item .heuresPeriode{
+	float:right;
+	background:none;
+	border:none;
+	width:20px;	
+	height:inherit;
+	line-height:inherit;
+	padding-left:inherit;
+	padding-right:inherit;
+	text-align:right;
+}
+.SSCal_table_h td div.ddedit_item:hover{
+	background-color: #ccc;
+}
+.SSCal_table_h td div.warning, .SSCal_table_h td div.error, .SSCal_table_h td div.pompierQuart, .SSCal_table_h td div.plus{
+	background-repeat:no-repeat;
+	background-position:right;	
+}
+.SSCal_table_h td div.plus{
+	background-image:url('../images/gris_plus.png');
+}
+.SSCal_table_h td div.pompierQuart{
+	background-image:url('../images/vert.png');
+}
+.SSCal_table_h td div.pompierQuart.plus{
+	background-image:url('../images/vert_plus.png');
+}
+.SSCal_table_h td div.warning{
+	background-image:url('../images/jaune.png');
+}
+.SSCal_table_h td div.warning.plus{
+	background-image:url('../images/jaune_plus.png');
+}
+.SSCal_table_h td div.error{
+	background-image:url('../images/rouge.png');
+}
+.SSCal_table_h td div.error.plus{
+	background-image:url('../images/rouge_plus.png');
+}
+.SSCal_table_h td div.label.warning, .SSCal_table_h td div.label.error, .SSCal_table_h td div.label.pompierQuart{
+	width:50px;
+	padding-left:10px;
+	text-align:left;
+}
+.SSCal_table_h td div.case div.formPoste{
+	overflow:hidden;
+	position:absolute;
+	background:none;
+}
+.SSCal_table_h td div.case div.opened{
+	z-index:999;
+	text-align:left;
+	border:solid thin black;
+	margin-left:-1px;
+	margin-top:-1px;
+	background-color:#fff;
+	text-align:left;
+	background-image:none;
+}
+.SSCal_table_h td div.case div.close{
+	position:absolute;
+	left:398px;
+	top:0px;
+	border:solid thin #DDD;
+	color:#aaa;
+	cursor:pointer;
+	width:25px;
+	height:25px;
+	text-align:center;
+	background-color:inherit;
+}
+.SSCal_table_h td div.case div.close:hover{
+	border:solid thin black;
+	color:#000;
+}
+
+.dispoPartielle{
+	height:20px;
+	margin-right:50px;
+	float:right;
+}
+.dispoPart{
+	visibility:hidden;
+	position:absolute;
+	z-index:1000;
+	background-color:#CCC;
+	border-color:#000;
+	border-width:1px;
+	border-style:solid;
+	padding:5px;
+}
+
+table.geHoraireGE{
+	border-top:1px solid #000;
+	border-right:1px solid #000;
+}

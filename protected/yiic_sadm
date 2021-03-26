@@ -1,0 +1,4 @@
+#!/usr/bin/env php
+<?php
+define('DOMAINE','incendiesadm.ca');
+require_once(dirname(__FILE__).'/yiic.php');

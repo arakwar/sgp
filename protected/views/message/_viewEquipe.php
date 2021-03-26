@@ -1,0 +1,1 @@
+<?php if($index==0) echo '<div class="premier"></div>';?><div class="view triEquipe"><?php echo CHtml::link(CHtml::encode($data->nom),array('index','idEquipe'=>$data->id)); ?></div>

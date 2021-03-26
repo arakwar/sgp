@@ -1,0 +1,1068 @@
+.alerte{
+	background-color:red;
+	color:#000;
+	font-weight:bold;
+	font-size:1.2em;
+	padding:5px;
+	display:none;
+}
+/* FRAMEWORK RESET */
+tbody tr:nth-child(even) td, tbody tr.even td{background:none;}
+input[type=text], input[type=password], input.text, input.title, textarea, select {margin:0;}
+.error{padding:0;margin:0;}
+html{min-width:1150px;}
+body
+{
+	margin: 0;
+	padding: 0;
+	/*color: #555;*/
+	font: normal 10pt Arial,Helvetica,sans-serif;
+	background-image:url('../images/background.jpg');
+}
+.container2 {
+    margin: 0 auto;
+    width: 1500px;
+}
+/*En t�te de la page*/
+#topMenu{position:relative;}
+#logoTop{position:absolute;top:0px;left:5px;width:135px;}
+#logoTop.petitLogo{width:65px;}
+#menu{height:53px;padding-left:140px;background-image:url('../images/menuTopBG.png');background-repeat:repeat-x;}
+#menu.petitLogo{padding-left:70px;}
+#info{background-image:url('../images/degradeRouge34.png');background-repeat:repeat-x;color:#FFF;height:34px;line-height:34px;/*margin-left:100px;*/margin-top:-13px;}
+#info span.login {float:right;margin-right:5px;font-size:1.3em;}
+#titrePage{margin:0 auto;width:350px;text-align:center;}
+#titrePage h1{color:#FFF;line-height:31px;font-size:2em;}
+.coinTitre{background-image:url('../images/coinTitre.png');background-repeat:no-repeat;width:20px;height:40px;float:left;}
+/*Fin de l'en-tete*/
+/*#container{margin-top:90px;margin-left:auto;margin-right:auto;width:950px;}*/
+/*Pied de page*/
+#footer{background-image:url('../images/degradeGris34.png');background-repeat:repeat-x;border-top:solid thin black;bottom:0;height:34px;line-height:34px;position:fixed;width:100%;}
+#footLogoSwordware {background-image: url("../images/logoSw.png");background-repeat: no-repeat;bottom: 0;cursor: pointer;height: 60px;left: 10px;position: fixed;width: 133px;}
+#footLogoFacebook {background-image: url("../images/logoFooterFacebook.png");background-repeat: no-repeat;bottom: 0;cursor: pointer;height: 48px;left: 1845px;position: fixed;width: 48px;margin-bottom:5px;}
+#footTxt {font-size: 20px;height: 34px;line-height: 34px;margin: auto;overflow-y: hidden;text-align: center;width: auto;color:#000;}
+#footLogoVille {background-repeat: no-repeat;bottom: 0;height: 65px;position: fixed;right: 10px;width: 168px;}
+/*Fin du pied de page*/
+
+
+/*classes g�n�riques*/
+.cursor{
+	cursor:pointer;
+}
+
+input[disabled="disabled"],textarea[disabled="disabled"],select[disabled="disabled"]{
+	border:none;
+}
+.clear{clear:both;}
+
+/* ----------- Style des en tête des boites de contenu -----------*/
+.enTeteDiv .enTeteSec{ 
+	float:right;
+	background-image:url('../images/degradeRouge34.png');
+	color:#FFF;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:1px;
+	padding-top:2px;
+	height:30px;
+}
+
+.enTeteDiv a{
+	text-decoration:none;
+	color:#fff;
+	font-size:20px;
+}
+
+.enTeteDiv .dernier{
+	border-top:solid thin #000;
+	border-right:solid thin #000;
+}
+
+.enTeteDiv .premier{
+	background-image : url('../images/coin34RougeDH.png');
+	background-repeat: no-repeat;
+	width:17px;
+	height:34px;
+	padding:0px;
+}
+
+.enTeteDiv .milieu{
+	border-top:solid thin #000;
+}
+
+.enTeteDiv .texte{
+	background-image:url('../images/degradeGris34.png');
+	min-width:175px;
+	text-align:center;
+	color:#000;
+}
+
+.enTeteDiv .centreRRH{
+	background-image : url('../images/centreRRH.png');
+	background-repeat: no-repeat;
+	width:17px;
+	height:33px;
+	padding:0px;
+}
+
+.enTeteDiv .centreRGH{
+	background-image : url('../images/centre34RGH.png');
+	background-repeat: no-repeat;
+	width:17px;
+	height:33px;
+	padding:0px;
+}
+.enTeteDiv .centreGRH{
+	background-image : url('../images/centre34GRH.png');
+	background-repeat: no-repeat;
+	width:17px;
+	height:33px;
+	padding:0px;
+}
+.cloche
+{
+	float:right;
+	margin-right: 30px;
+	margin-top: 8px;
+}
+.cloche span
+{
+	position: absolute;
+}
+#cloche-nbr
+{
+	text-decoration: none;
+	text-align: center;
+	color:#fff;
+	display: block;
+	width:20px;
+	background-image:url('../images/cloche.png');
+	background-position: top;
+	height: 19px;
+    padding-left: 2px;
+    padding-top: 2px;
+    vertical-align: middle;
+    font-weight: bolder;
+}
+#cloche-nbr.notification
+{
+	background-position: bottom;
+}
+.border {
+	border : solid thin black;
+}
+
+#page
+{
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+#page.grosLogo{
+	margin-top: 100px;
+}
+
+.centreRRH{
+	background-image : url('../images/centreRRH.png');
+	background-repeat: no-repeat;
+	width:17px;
+	height:33px;
+	padding:0px;
+	display:inline-block;
+	border-top:solid thin black;
+}
+.centreRRB40{
+	background-image : url('../images/centreRRB40.png');
+	background-repeat: no-repeat;
+	width:20px;
+	height:39px;
+	padding:0px;
+	display:inline-block;
+	border-top:solid thin black;
+}
+
+.premier{
+	background-image : url('../images/coin34RougeDH.png');
+	background-repeat: no-repeat;
+	width:17px;
+	height:34px;
+	padding:0px;
+	display:inline-block;
+}
+
+div.flash-error, div.flash-notice, div.flash-success
+{
+	padding:.8em;
+	margin-bottom:1em;
+	border:2px solid #ddd;
+}
+
+div.flash-error
+{
+	background:#FBE3E4;
+	color:#8a1f11;
+	border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+	background:#FFF6BF;
+	color:#514721;
+	border-color:#FFD324;
+}
+
+div.flash-success
+{
+	background:#E6EFC2;
+	color:#264409;
+	border-color:#C6D880;
+}
+
+div.flash-error a
+{
+	color:#8a1f11;
+}
+
+div.flash-notice a
+{
+	color:#514721;
+}
+
+div.flash-success a
+{
+	color:#264409;
+}
+
+div.form .rememberMe label
+{
+	display: inline;
+}
+
+div.view
+{
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #000;
+	background-color:#DDD;
+}
+
+div.breadcrumbs
+{
+	font-size: 0.9em;
+	padding: 5px 20px;
+	background-color:#DDD;
+}
+
+div.breadcrumbs span
+{
+	font-weight: bold;
+	background-color:#DDD;
+}
+
+div.search-form
+{
+	padding: 10px;
+	margin: 10px 0;
+	background: #eee;
+}
+
+div.summary{
+	color:#000;
+	/*font-weight:bold;*/
+	font-size:1.1em;
+}
+
+.portlet
+{
+
+}
+
+.portlet-decoration
+{
+	padding: 3px 8px;
+	background: #A40C0D;
+	border-left: 5px solid #7A0707;
+}
+
+.portlet-title
+{
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	color: #FFF;
+}
+
+.portlet-content
+{
+	font-size:0.9em;
+	margin: 0 0 15px 0;
+	padding: 5px 8px;
+	background:#DDD;
+}
+
+.portlet-content ul
+{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+.portlet-content li
+{
+	padding: 2px 0 4px 0px;
+}
+
+.operations
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.operations li
+{
+	padding-bottom: 2px;
+}
+
+.operations li a
+{
+	font: bold 12px Arial;
+	color: #000;
+	display: block;
+	padding: 2px 0 2px 8px;
+	line-height: 15px;
+	text-decoration: none;
+}
+
+.operations li a:visited
+{
+	color: #000;
+}
+
+.operations li a:hover
+{
+	background: #EEE;
+}
+
+/*CSS des Evenement*/
+/***********************************************/
+.containerEve {
+	width:1070px;
+	margin:0 auto;
+}
+
+.evenement{
+	width: 840px;
+}
+
+#evenementSousType{
+	width:180px;
+	min-height:50px;
+	max-height:200px;
+	border-color:#999;
+	border-width:1px;
+	border-style:solid;
+	background-color:#FFF;
+}
+
+.eventUsr{
+	text-align:center;
+}
+
+.eventUsrB{
+	font-weight:bold;
+}
+
+/*CSS de CDetailView*/
+/***********************************************/
+
+table.detail-view .null
+{
+        color: pink;
+}
+
+table.detail-view
+{
+        background: white;
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0;
+}
+
+table.detail-view th, table.detail-view td
+{
+        font-size: 0.9em;
+        border: 1px white solid;
+        padding: 0.3em 0.6em;
+        vertical-align: top;
+}
+
+table.detail-view th
+{
+        text-align: right;
+        width: 160px;
+}
+
+table.detail-view tr.odd
+{
+/*      background:#E5F1F4;*/
+        background: #eee;
+}
+
+table.detail-view tr.even
+{
+/*      background:#F8F8F8;*/
+        background: #ddd;
+}
+
+table.detail-view tr.odd th
+{
+}
+
+table.detail-view tr.even th
+{
+}
+/*Fin du CSS de CDetailView*/
+
+/*SSCal*/
+/*div conteneur du calendrier*/
+.SSCal_conteneur{
+	min-width:400px;
+	float:left;
+}
+/*Exception pour FDF */
+.SSCal_FDF{
+	margin-right:25px;
+}
+/*Exception pour Equipe specialise */
+.SSCal_SP{
+	margin-left:-60px;
+}
+/*En tete*/
+.SSCal_header{
+	height:34px;
+	font-size : 24px;
+}
+
+/*Corps*/
+.SSCal_table td {
+	border-left:solid thin #000;
+	padding:0;
+}
+
+.SSCal_table td > div{
+	width :60px;
+	font-weight:bold;
+	text-align:center;
+	/*cursor:pointer;*/
+	height:30px;
+	line-height:30px;
+	border-bottom:solid thin #000;
+	background-image:url('../images/fondBlancTranslucide.png');
+	position:relative;
+}
+
+.SSCal_table td div.case{
+	background-image:url('../images/degrade.png');
+}
+
+.SSCal_table td div.label{
+	background:none;
+	border:none;
+}
+.SSCal_table td div.ligne{
+	padding-right:25px;
+}
+
+/*.dispoDefaut td div{
+	width :50px;
+	font-weight:bold;
+	text-align:center;
+	/*cursor:pointer;*
+	height:30px;
+	line-height:30px;
+	border-bottom:solid thin #000;
+	background-image:url('../images/degrade.png');
+}*/
+/*
+.dispoPeriode td div{
+	width :50px;
+	font-weight:bold;
+	text-align:center;
+	/*cursor:pointer;*
+	height:30px;
+	line-height:30px;
+	border-bottom:solid thin #000;
+	background-image:url('../images/degrade.png');
+}
+*/
+.grilleDispoFDF td div{
+	width :100px;
+	font-weight:bold;
+	text-align:center;
+	/*cursor:pointer;*/
+	height:30px;
+	line-height:30px;
+	border-bottom:solid thin #000;
+	background-image:url('../images/degrade.png');
+}
+
+.SSCal_table .tablRangee{
+	background-image:url('../images/fondBlancTranslucide.png');
+}
+
+.SSCal_table {
+	border-top:solid thin #000;
+	border-right:solid thin #000;
+	padding:0;
+	margin:0;
+}
+
+/*Pied*/
+
+.bold {
+	font-weight:bold;
+}
+/*Fin SSCal*/
+
+/*CSS sp�civiue � la liste des usagers*/
+.usager .view {
+	background : url('../images/fondBlancTranslucide.png');
+	border: none;
+	margin: 0;
+	padding: 0;
+	min-height:90px;
+	padding-top: 5px;
+	padding-bottom:10px;
+}
+
+.usager .viewMess{
+	background : url('../images/fondBlancTranslucide.png');
+	border: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+	padding-bottom:5px;	
+}
+
+.usager .summary{
+	display:none;
+}
+
+.usager{
+	border: solid thin black;
+}
+
+.usager .itemTop div {
+	min-height:34px;
+	background-color:#bdbdbc;
+	background-image : url('../images/degradeGris34.png');
+	background-repeat:repeat-x;
+	line-height:30px;
+	font-size:1.3em;
+}
+
+.usager .view .itemTop .numero {
+	float:left;
+	border-bottom : solid thin black;
+	padding-left:5px;
+}
+ 
+.usager .view .itemTop .diviseur100 {
+	background-image : url('../images/centre34GGH.png');
+	background-repeat: no-repeat;
+	width: 17px;
+	float:left;
+}
+ 
+.usager .view .itemTop .nom {
+	border-top : solid thin black;
+}
+
+.usager .view .tel {
+	background:none;
+	margin-left:20px;
+}
+
+.usager .view .photo {
+	background-image: url('../images/noPhoto.png');
+	background-size: 62px 80px;
+	border : solid thin black;
+	height: 80px;
+	width: 62px;
+	float: right;
+	margin-right:5px;
+}
+
+.usager .viewMess .itemTop .numero {
+	float:left;
+	border-bottom : solid thin black;
+	padding-left:5px;
+}
+
+.usager .viewMess .itemTop .diviseur100 {
+	background-image : url('../images/centre34GGH.png');
+	background-repeat: no-repeat;
+	width: 17px;
+	float:left;
+}
+
+.usager .viewMess .itemTop .nom {
+	border-top : solid thin black;
+}
+
+.heureUsager, .heureUsager td{
+	padding:0px;
+	text-align: center;
+}
+
+.heureUsager tr.titre td{
+	border-bottom: solid thin black;
+	font-weight:bold;
+}
+
+.heureUsager tr td:not(:last-child){
+	border-right: solid thin black;
+	width:60px;
+}
+
+/*CSS usager spécifique à la messagerie*/
+.ajouteDestinataire{
+	font-size:1.3em;
+	line-height:1.2em;
+	color:#55f;
+	cursor:pointer;
+}
+.ajouteDestinataire:hover{
+	color:#0f0;
+}
+#listeDestinataire{
+	width:427px;
+}
+#videListe{
+	text-decoration:underline;
+	cursor:pointer;
+}
+#videListe:hover{
+	text-decoration:none;
+}
+/*Fin CSS usager*/
+/*CSS pour la liste d'equipe*/
+div.equipe .view {
+	background : none;
+	border: none;
+	margin: 0;
+	padding: 5px 0;
+	/*height:80px;*/
+}
+
+div.equipe{
+	border: solid thin black;
+	background : url('../images/fondBlancTranslucide.png');
+	margin-bottom:10px;
+}
+div.equipe.avecEnTete{
+	margin-top:34px;
+}
+
+/*equipeMini comme entete de liste*/
+div.equipeMini{
+	text-align:right;
+	border-right:solid thin black;
+}
+div.equipeMini .view {
+	border: none;
+	margin: 0;
+	padding: 7px;
+	text-align:right;
+	height:19px;
+	font-size:1.2em;
+	background-image:url(../images/degradeRouge34.png);
+	display:inline-block;
+	border-top:solid thin black;
+	vertical-align:top;
+}
+div.equipeMini .view a{
+	text-decoration:none;
+	color:#fff;
+}
+div.equipeMini .view a:hover{
+	text-decoration:underline;
+}
+
+div.equipeMini .view span{
+	text-decoration:none;
+	color:#fff;
+	cursor:pointer;
+}
+div.equipeMini .view span:hover{
+	text-decoration:underline;
+}
+div.equipeMini .view label{
+	color:#fff;
+}
+/*Fin CSS equipe*/
+/*CSS pour la liste de document*/
+.document .view {
+	padding: 10px;
+	margin: 10px 0;
+	margin-bottom:0px;
+	border: 1px solid #000;
+	background-color:#DDD;
+}
+
+.document .view img {
+	float:left;
+}
+/*Fin CSS document*/
+/*CSS pour les minimum*/
+.old{
+	background-color:#333;
+}
+/*Fin CSS minimum*/
+.SSCal_table td div.jour {
+	width:120px;
+}
+.SSCal_table td div.caseDispo{
+	width:auto;
+	height:130px;
+	border:none;
+	overflow:scroll;
+}
+.SSCal_table td div.enligne{
+	float:left;
+	height:auto;
+	background:none;
+	border:none;
+}
+
+.textTransparent{
+	background-color:transparent;
+	border-color:transparent;
+	width:55px;
+	text-align:center;
+	font-weight:bold;
+	height:24px;
+	line-height:24px;
+	font:inherit;
+	color:inherit;
+	padding:-2px;
+	display:block;
+}
+.textTransparent.focused{
+	background-color:#ddd;
+}
+.SSCal_table td div.ddedit_container{
+	min-width:200px;
+	width:auto;
+	height:auto;
+	background-color:#FFF;
+	border:solid thin black;
+}
+.SSCal_table td div.ddedit_item{
+	background:none;
+	border:none;
+	width:auto;	
+	height:20px;
+	line-height:20px;
+	padding-left:2px;
+	padding-right:2px;
+	text-align:left;
+}
+.SSCal_table td div.ddedit_item.nonPoste{
+	color:#999;
+}
+.SSCal_table td div.ddedit_item .heures, .SSCal_table td div.ddedit_item .heuresPeriode{
+	float:right;
+	background:none;
+	border:none;
+	width:20px;	
+	height:inherit;
+	line-height:inherit;
+	padding-left:inherit;
+	padding-right:inherit;
+	text-align:right;
+}
+.SSCal_table td div.ddedit_item:hover{
+	background-color: #ccc;
+}
+#ajaxCharge{
+	float:right;
+	margin-top:-16px;
+	margin-right:-40px;
+	width:16px;
+	height:16px;
+	background-repeat:none;
+}
+.wait{
+	background-image:url('../images/ajax-loader.gif');
+}
+.jourGris {
+	color:#aaa;
+}
+
+/* GRILLE DE FORCE DE FRAPPE */
+
+/**
+ * Un très gros tricotage a été fait avec les marges et les bordures pour donner un aspect de tableau aux listes.
+ * Un bon jeu avec les padding et le line height aussi a fait son travail.
+ */
+
+div.grilleFDF{
+	margin:0;
+	padding:0;
+	padding-left:0;
+	float:right;
+	font-weight:bold;
+}
+ /*
+ul.grilleFDF ul{
+	padding-left:0;
+}
+ul.grilleFDF li{
+	list-style-type:none;
+	vertical-align:top;
+	padding:0;
+	border:solid thin black;
+	margin-left:-1px;
+	margin-right:-1px;
+	margin-bottom:-1px;
+	line-height:30px;
+	text-align:center;
+}
+ul.grilleFDF li.jour,ul.grilleFDF li.jourSP,ul.grilleFDF li.legendeSP{
+	display:inline-block;
+	margin-right:0px;
+}
+li.legendeSP ul{
+	margin-top:-1px;
+}
+ul.grilleFDF li.quart{
+	display:inline-block;
+	margin-right:-1px;
+}
+ul.grilleFDF li.equipe{
+	/*padding-top:5px;*
+	margin-right:-1px;
+	margin-top:-1px;
+}
+ul.grilleFDF li.quart+li.quart{
+	margin-left:0px;
+}*/
+
+div.grilleFDF table{
+	background-image:url('../images/fondBlancTranslucide.png');
+}
+
+.fdf{
+	float:left;
+	width:30%;
+	margin-right:20px;
+}
+
+.fdf td, .fdf th, #tableauFDFGroupe td, #tableauFDFGroupe th{
+	text-align:center;
+	border:solid thin black;
+}
+.fdf td.pompier, #tableauFDFGroupe td.pompierSP{
+	height:19px;
+	width:60px;
+	background-repeat:repeat-x;
+}
+
+.fdf, #tableauFDFGroupe{
+	border-collapse:collapse;
+	margin-bottom:0px;
+}
+/*
+ul.grilleFDF li.pompier{
+	padding:0px 11px 0px 11px;
+	/*border-top:none;*
+	margin-bottom:-1px;
+	margin-top:-1px;
+	margin-right:-1px;
+	min-width:55px;/*Changera la largeur générale du tableau*
+}
+
+ul.grilleFDF li.pompier.enTete{
+	margin-top:0px;
+	border-left:none;
+	margin-left:0px;
+}
+
+ul.grilleFDF li.pompierSP{
+	padding:0px 11px 0px 11px;
+	/*border-top:none;*
+	margin-bottom:0px;
+	border-bottom:none;
+	margin-top:-1px;
+	margin-right:0px;
+	border-right:none;
+	min-width:59px;/*Changera la largeur générale du tableau*
+}
+
+#grilleDataSP .dateFDF{
+	margin-right:0px;
+}*/
+
+#grilleDataSP{
+	float:left;
+}
+
+.dateFDF{
+	float:left;
+	width:88px;
+	text-align:ceter;
+}
+
+.ligne{
+	margin:0px;
+}
+
+.ligne li{
+	float:left;
+}
+
+.listePompier, .listePompierSP{
+	cursor:pointer;
+}
+
+.cacher{
+	visibility:hidden;
+}
+
+.titreListePompier{
+	font-weight:bold;
+}
+
+/************************CSS de l'horaire******************************/
+
+div.barreTour{
+	margin-left:400px;
+	height:40px;
+	margin-bottom:36px;
+}
+div.barreTour div{
+	height:inherit;
+	float:left;
+	min-width:20px;
+	font-size:1.5em;
+	line-height:40px;
+	border-top:solid thin black;
+	border-bottom:solid thin black;
+}
+div.barreTour div.texte{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.SSCal_table td div.warning, .SSCal_table td div.error, .SSCal_table td div.pompierQuart, .SSCal_table td div.plus{
+	background-repeat:no-repeat;
+	background-position:right;	
+}
+.SSCal_table td div.plus{
+	background-image:url('../images/gris_plus.png');
+}
+.SSCal_table td div.pompierQuart{
+	background-image:url('../images/vert.png');
+}
+.SSCal_table td div.pompierQuart.plus{
+	background-image:url('../images/vert_plus.png');
+}
+.SSCal_table td div.warning{
+	background-image:url('../images/jaune.png');
+}
+.SSCal_table td div.warning.plus{
+	background-image:url('../images/jaune_plus.png');
+}
+.SSCal_table td div.error{
+	background-image:url('../images/rouge.png');
+}
+.SSCal_table td div.error.plus{
+	background-image:url('../images/rouge_plus.png');
+}
+.SSCal_table td div.label.warning, .SSCal_table td div.label.error, .SSCal_table td div.label.pompierQuart{
+	width:50px;
+	padding-left:10px;
+	text-align:left;
+}
+
+.gris{
+	color:#999;
+}
+.valider{
+	color:#fff;
+	cursor:pointer;
+}
+#tblDispoModif tr.ligne{
+	cursor:pointer;
+}
+#tblDispoModif tr.ligne:hover{
+	background-color:#eee;
+}
+.SSCal_table td div.case div.formPoste{
+	overflow:hidden;
+	position:absolute;
+	background:none;
+}
+.SSCal_table td div.case div.opened{
+	z-index:999;
+	text-align:left;
+	border:solid thin black;
+	margin-left:-1px;
+	margin-top:-1px;
+	background-color:#fff;
+	text-align:left;
+	background-image:none;
+}
+.SSCal_table td div.case div.close{
+	position:absolute;
+	left:198px;
+	top:0px;
+	border:solid thin #DDD;
+	color:#aaa;
+	cursor:pointer;
+	width:25px;
+	height:25px;
+	text-align:center;
+	background-color:inherit;
+}
+.SSCal_table td div.case div.close:hover{
+	border:solid thin black;
+	color:#000;
+}
+
+.editH{
+	float:left;
+	padding-top:7px;
+}
+/**************************Disponibilit�****************************/
+
+.defautDispo{
+	padding-top:34px;
+}
+
+.sendDefautDispo{
+	margin-top:96px;
+}
+
+.tooltip{
+	float:left;
+	margin-left:5px;
+	margin-right:5px;
+}
+@media screen and (max-width: 1180px) {
+	.dispoPeriode tr{
+		display: block;
+	}
+	.dispoPeriode td{
+		display:block;
+	}
+	.dispoPeriode td.jour{
+		display:none;
+	}
+
+
+}

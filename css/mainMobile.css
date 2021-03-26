@@ -1,0 +1,596 @@
+html{width:100%;}
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image:url('../images/background.jpg');
+	font-family:Helvetica, Arial, Verdana, sans-serif;
+	font-size:1em;
+	width:100%;
+}
+*{
+    -webkit-text-size-adjust:none;
+}
+/*En tête de la page*/
+#topMenu{width:100%;position:relative;}
+#menu{height:40px;background-image:url('../images/menuTopBG.png');background-repeat:repeat-x;width:100%}
+#info{background-image:url('../images/degradeRouge34.png');background-repeat:repeat-x;color:#FFF;height:30px;line-height:30px;margin-top:-5px;width:100%;}
+/*Fin de l'en-tête*/
+/*Pied de page*/
+#footer{background-image:url('../images/degradeGris34.png');background-repeat:repeat-x;border-top:solid thin black;bottom:0;height:32px;line-height:17px;position:fixed;width:100%;}
+#footLogoSwordware {background-image: url("../images/logoSw.png");background-repeat: no-repeat;  bottom: 0;cursor: pointer;height: 58px;left: 10px;position: fixed;width: 130px;}
+#footLogoVille {background-image: url("../images/logoVille.png");background-repeat: no-repeat;bottom: 0;height: 65px;position: fixed;right: 10px;width: 168px;}
+/*Fin du pied de page*/
+
+
+/*classes génériques*/
+input[disabled="disabled"],textarea[disabled="disabled"],select[disabled="disabled"]{
+	border:none;
+}
+
+.enTeteDiv .enTeteSec{
+	float:right;
+	background-image:url('../images/degradeRouge34.png');
+	color:#FFF;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:1px;
+	padding-top:2px;
+	height:30px;
+}
+
+.enTeteDiv a{
+	text-decoration:none;
+	color:#fff;
+}
+
+.enTeteDiv .dernier{
+	border-top:solid thin #000;
+	border-right:solid thin #000;
+}
+
+.enTeteDiv .premier{
+	background-image : url('../images/coin34RougeDH.png');
+	background-repeat: no-repeat;
+	width:17px;
+	height:34px;
+	padding:0px;
+}
+
+.enTeteDiv .milieu{
+	border-top:solid thin #000;
+}
+
+.enTeteDiv .texte{
+	background-image:url('../images/degradeGris34.png');
+	min-width:175px;
+	text-align:center;
+	color:#000;
+}
+
+.enTeteDiv .centreRRH{
+	background-image : url('../images/centreRRH.png');
+	background-repeat: no-repeat;
+	width:17px;
+	height:33px;
+	padding:0px;
+}
+
+.enTeteDiv .centreRGH{
+	background-image : url('../images/centre34RGH.png');
+	background-repeat: no-repeat;
+	width:17px;
+	height:33px;
+	padding:0px;
+}
+.enTeteDiv .centreGRH{
+	background-image : url('../images/centre34GRH.png');
+	background-repeat: no-repeat;
+	width:17px;
+	height:33px;
+	padding:0px;
+}
+
+.border {
+	border : solid thin black;
+}
+
+#page
+{
+	margin-top: 0px;
+	margin-bottom: 25px;
+	width:100%;
+}
+
+.centreRRH{
+	background-image : url('../images/centreRRH.png');
+	background-repeat: no-repeat;
+	width:17px;
+	height:33px;
+	padding:0px;
+	display:inline-block;
+	border-top:solid thin black;
+}
+.centreRRB40{
+	background-image : url('../images/centreRRB40.png');
+	background-repeat: no-repeat;
+	width:20px;
+	height:39px;
+	padding:0px;
+	display:inline-block;
+	border-top:solid thin black;
+}
+
+.premier{
+	background-image : url('../images/coin34RougeDH.png');
+	background-repeat: no-repeat;
+	width:17px;
+	height:34px;
+	padding:0px;
+	display:inline-block;
+}
+
+div.flash-error, div.flash-notice, div.flash-success
+{
+	padding:.8em;
+	margin-bottom:1em;
+	border:2px solid #ddd;
+}
+
+div.flash-error
+{
+	background:#FBE3E4;
+	color:#8a1f11;
+	border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+	background:#FFF6BF;
+	color:#514721;
+	border-color:#FFD324;
+}
+
+div.flash-success
+{
+	background:#E6EFC2;
+	color:#264409;
+	border-color:#C6D880;
+}
+
+div.flash-error a
+{
+	color:#8a1f11;
+}
+
+div.flash-notice a
+{
+	color:#514721;
+}
+
+div.flash-success a
+{
+	color:#264409;
+}
+
+div.form .rememberMe label
+{
+	display: inline;
+}
+
+div.view
+{
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #000;
+	background-color:#DDD;
+}
+
+/*CSS de CDetailView*/
+/***********************************************/
+
+table.detail-view .null
+{
+        color: pink;
+}
+
+table.detail-view
+{
+        background: white;
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0;
+}
+
+table.detail-view th, table.detail-view td
+{
+        font-size: 0.9em;
+        border: 1px white solid;
+        padding: 0.3em 0.6em;
+        vertical-align: top;
+}
+
+table.detail-view th
+{
+        text-align: right;
+        width: 160px;
+}
+
+table.detail-view tr.odd
+{
+/*      background:#E5F1F4;*/
+        background: #eee;
+}
+
+table.detail-view tr.even
+{
+/*      background:#F8F8F8;*/
+        background: #ddd;
+}
+
+table.detail-view tr.odd th
+{
+}
+
+table.detail-view tr.even th
+{
+}
+/*Fin du CSS de CDetailView*/
+
+/*SSCal*/
+/*div conteneur du calendrier*/
+.SSCal_conteneur{
+	min-width:400px;
+	float:left;
+}
+/*Exception pour FDF */
+.SSCal_FDF{
+	margin-right:25px;
+}
+/*Exception pour Equipe spécialisé */
+.SSCal_SP{
+	margin-left:-60px;
+}
+/*En tête*/
+.SSCal_header{
+	height:34px;
+	font-size : 24px;
+}
+
+/*Corps*/
+.SSCal_table td {
+	border-left:solid thin #000;
+	padding:0;
+}
+
+.SSCal_table td div{
+	width :60px;
+	font-weight:bold;
+	text-align:center;
+	/*cursor:pointer;*/
+	height:30px;
+	line-height:30px;
+	border-bottom:solid thin #000;
+	background-image:url('../images/fondBlancTranslucide.png');
+}
+
+.SSCal_table td div.case{
+	background-image:url('../images/degrade.png');
+}
+
+.dispoDefaut td div{
+	width :50px;
+	font-weight:bold;
+	text-align:center;
+	/*cursor:pointer;*/
+	height:30px;
+	line-height:30px;
+	border-bottom:solid thin #000;
+	background-image:url('../images/degrade.png');
+}
+
+.dispoPeriode td div{
+	width :50px;
+	font-weight:bold;
+	text-align:center;
+	/*cursor:pointer;*/
+	height:30px;
+	line-height:30px;
+	border-bottom:solid thin #000;
+	background-image:url('../images/degrade.png');
+}
+
+.grilleDispoFDF td div{
+	width :80px;
+	font-weight:bold;
+	text-align:center;
+	/*cursor:pointer;*/
+	height:30px;
+	line-height:30px;
+	border-bottom:solid thin #000;
+	background-image:url('../images/degrade.png');
+}
+
+.SSCal_table .tablRangee{
+	background-image:url('../images/fondBlancTranslucide.png');
+}
+
+.SSCal_table {
+	border-top:solid thin #000;
+	border-right:solid thin #000;
+	padding:0;
+	margin:0;
+}
+
+/*Pied*/
+
+.bold {
+	font-weight:bold;
+}
+/*Fin SSCal*/
+
+/*CSS spéciviue à la liste des usagers*/
+.usager .view {
+	background : url('../images/fondBlancTranslucide.png');
+	border: none;
+	margin: 0;
+	padding: 0;
+	height:90px;
+	padding-top: 5px;
+	padding-bottom:10px;
+}
+
+.usager .summary{
+	display:none;
+}
+
+.usager{
+	border: solid thin black;
+}
+
+.usager .itemTop div {
+	height:34px;
+	background-image : url('../images/degradeGris34.png');
+	background-repeat:repeat-x;
+	line-height:30px;
+	font-size:1.3em;
+}
+
+.usager .view .itemTop .numero {
+	float:left;
+	border-bottom : solid thin black;
+	padding-left:5px;
+}
+ 
+.usager .view .itemTop .diviseur100 {
+	background-image : url('../images/centre34GGH.png');
+	background-repeat: no-repeat;
+	width: 17px;
+	float:left;
+}
+ 
+.usager .view .itemTop .nom {
+	border-top : solid thin black;
+}
+
+.usager .view .tel {
+	background:none;
+	margin-left:20px;
+}
+
+.usager .view .photo {
+	background-image: url('../images/noPhoto.png');
+	background-size: 62px 80px;
+	border : solid thin black;
+	height: 80px;
+	width: 62px;
+	float: right;
+	margin-right:5px;
+}
+
+.heureUsager, .heureUsager td{
+	padding:0px;
+	text-align: center;
+}
+
+.heureUsager tr.titre td{
+	border-bottom: solid thin black;
+	font-weight:bold;
+}
+
+.heureUsager tr td:not(:last-child){
+	border-right: solid thin black;
+	width:60px;
+}
+
+/*CSS usager spécifique à la messagerie*/
+.ajouteDestinataire{
+	font-size:1.3em;
+	line-height:1.2em;
+	color:#55f;
+	cursor:pointer;
+}
+.ajouteDestinataire:hover{
+	color:#0f0;
+}
+#listeDestinataire{
+	width:427px;
+}
+#videListe{
+	text-decoration:underline;
+	cursor:pointer;
+}
+#videListe:hover{
+	text-decoration:none;
+}
+/*Fin CSS usager*/
+
+.SSCal_table td div.jour {
+	width:120px;
+}
+.SSCal_table td div.enligne{
+	float:left;
+	height:auto;
+	background:none;
+	border:none;
+}
+
+.SSCal_table td div.minimum{
+	background-image:url('../images/degradeVert29.png');
+}
+.SSCal_table td div.nonMinimum{
+	background-image:url('../images/degradeRed29.png');
+}
+
+.textTransparent{
+	background-color:transparent;
+	border-color:transparent;
+	width:inherit;
+	text-align:center;
+	font-weight:bold;
+	height:25px;
+	line-height:25px;
+	font:inherit;
+	color:inherit;
+	padding:-2px;
+}
+
+#ajaxCharge{
+	float:right;
+	margin-top:-16px;
+	margin-right:-40px;
+	width:16px;
+	height:16px;
+	background-repeat:none;
+}
+.wait{
+	background-image:url('../images/ajax-loader.gif');
+}
+.jourGris {
+	color:#aaa;
+}
+
+/* GRILLE DE FORCE DE FRAPPE */
+
+/**
+ * Un très gros tricotage a été fait avec les marges et les bordures pour donner un aspect de tableau aux listes.
+ * Un bon jeu avec les padding et le line height aussi a fait son travail.
+ * TODO : mettre une largeur dynamique pour que sur la page de view ca donne 7 jours par ligne a 2 et a 3 quarts
+ */
+ul.grilleFDF{
+	margin:0;
+	padding:0;
+	padding-left:0;
+	background-image:url('../images/fondBlancTranslucide.png');
+	float:right;
+	font-weight:bold;
+}
+ul.grilleFDF ul{
+	padding-left:0;
+}
+ul.grilleFDF li{
+	list-style-type:none;
+	vertical-align:top;
+	padding:0;
+	border:solid thin black;
+	margin-left:-1px;
+	margin-right:-1px;
+	margin-bottom:-1px;
+	line-height:30px;
+	text-align:center;
+}
+ul.grilleFDF li.jour,ul.grilleFDF li.jourSP,ul.grilleFDF li.legendeSP{
+	display:inline-block;
+	margin-right:0px;
+}
+li.legendeSP ul{
+	margin-top:-1px;
+}
+ul.grilleFDF li.quart{
+	display:inline-block;
+	margin-right:-1px;
+}
+ul.grilleFDF li.equipe{
+	/*padding-top:5px;*/
+	margin-right:-1px;
+}
+ul.grilleFDF li.quart+li.quart{
+	margin-left:0px;
+}
+ul.grilleFDF li.pompier{
+	padding:0px 12px 0px 12px;
+	/*border-top:none;*/
+	margin-bottom:-1px;
+	margin-top:-1px;
+	margin-right:-1px;
+	min-width:31px;/*Changera la largeur générale du tableau*/
+}
+
+.cacher{
+	visibility:hidden;
+}
+
+#statut h3
+{    
+	text-align: center;
+}
+#content
+{
+	clear: both;
+	margin:auto;
+	text-align: center;
+}
+.horaireCaserneQuart
+{
+	border-bottom: solid thin black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 8px;
+}
+.caseHoraire{
+	width:300px;
+	margin:auto;
+	text-align:left;
+}
+.horaireCaserneQuart.aucun
+{
+	border-top: solid thin black;
+}
+.horaireCaserneQuart p
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.horaireCaserneQuart.first
+{
+	border-top: solid thin black;
+}
+.forceFrappeDispo, .tableForceFrappe
+{
+	border-collapse: collapse;
+	margin: auto;
+	border-spacing: 0;
+}
+.forceFrappeDispo td, .tableForceFrappe td
+{
+	border: solid thin black;
+	width: 62px;
+	padding: 4px 10px 4px 5px;
+
+}
+.forceFrappeDispo a
+{
+	display: block;
+	width: 62px;
+	height: 24px;
+}
+.forceFrappeDispo.head, .tableForceFrappe.head
+{
+	width: 100px;
+	font-weight: bold;
+}
+#forceFrappe
+{
+	margin-bottom: 65px;
+}

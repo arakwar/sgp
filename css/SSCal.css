@@ -1,0 +1,55 @@
+/*div conteneur du calendrier*/
+.SSCal_conteneur{
+	min-width:400px;
+	float:left;
+}
+/*En tête*/
+.SSCal_header{
+	height:34px;
+	font-size : 24px;
+}
+
+/*Corps*/
+.SSCal_table td {
+	border-left:solid thin #000;
+	padding:0;
+}
+
+.SSCal_table td div{
+	width :60px;
+	font-weight:bold;
+	text-align:center;
+	cursor:pointer;
+	height:30px;
+	line-height:30px;
+	border-bottom:solid thin #000;
+	background-image:url('../images/fondBlancTranslucide.png');
+}
+
+.dispoDefaut td div{
+	width :50px;
+	font-weight:bold;
+	text-align:center;
+	cursor:pointer;
+	height:30px;
+	line-height:30px;
+	border-bottom:solid thin #000;
+	background-image:url('../images/degrade.png');
+}
+
+.SSCal_table .tablRangee{
+	background-image:url('../images/fondBlancTranslucide.png');
+}
+
+.SSCal_table {
+	border-top:solid thin #000;
+	border-right:solid thin #000;
+	padding:0;
+	margin:0;
+}
+
+/*Pied*/
+
+.bold {
+	font-weight:bold;
+}

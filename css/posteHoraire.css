@@ -1,0 +1,13 @@
+.tablePH{
+	border-collapse:collapse;	
+}
+
+.tablePH td{
+	border-style:solid;
+	border-width:thin;
+	border-color:#000;
+}
+
+.tablePH td b{
+	font-weight:bold;
+}
