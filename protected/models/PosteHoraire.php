@@ -46,7 +46,7 @@ class PosteHoraire extends CActiveRecord
 	{
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
-		return array(
+		$rules = array(
 			array('tbl_quart_id, tbl_poste_id', 'required'),
 			array('tbl_quart_id, tbl_poste_id', 'numerical', 'integerOnly'=>true),
 			array('heureDebut, heureFin, dateDebut, dateFin', 'safe'),
@@ -54,6 +54,14 @@ class PosteHoraire extends CActiveRecord
 			// Please remove those attributes that should not be searched.
 			array('id, heureDebut, heureFin, tbl_quart_id, tbl_poste_id', 'safe', 'on'=>'search'),
 		);
+
+		if(Yii::app()->params['poste_horaire_couleur'] === 1){
+			$rules = array_merge($rules, array(
+				array('couleur, order', 'safe')
+			));
+		}
+
+		return $rules;
 	}
 
 	/**
@@ -76,7 +84,7 @@ class PosteHoraire extends CActiveRecord
 	 */
 	public function attributeLabels()
 	{
-		return array(
+		$labels =  array(
 			'id' => Yii::t('model','posteHoraire.id'),
 			'heureDebut' => Yii::t('model','posteHoraire.heureDebut'),
 			'heureFin' => Yii::t('model','posteHoraire.heureFin'),
@@ -84,6 +92,15 @@ class PosteHoraire extends CActiveRecord
 			'tbl_poste_id' => Yii::t('model','posteHoraire.tbl_poste_id'),
 			'tblCasernes' => Yii::t('model','posteHoraire.tblCasernes'),
 		);
+
+		if(Yii::app()->params['poste_horaire_couleur'] === 1){
+			$labels = array_merge($labels, array(
+				'couleur' => 'Couleur',
+				'order' => 'Ordre'
+			));
+		}
+
+		return $labels;
 	}
 
 	/**

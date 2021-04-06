@@ -1,6 +1,7 @@
 <?php
+
 return array(
-	'connectionString' => 'mysql:host=database;dbname=sgp_edm',
+	'connectionString' => 'mysql:host=database;dbname=sgp_edmunston',
 	'emulatePrepare' => true,
 	'username' => 'root',
 	'password' => '',

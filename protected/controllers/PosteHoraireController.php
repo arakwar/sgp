@@ -165,7 +165,11 @@ class PosteHoraireController extends Controller
 							'INNER JOIN tbl_quart q ON q.id = ph.tbl_quart_id';
 		$criteria->condition = 'phc.tbl_caserne_id = :caserne AND dateFin IS NULL';
 		$criteria->params = array(':caserne'=>$caserne);
-		$criteria->order = 'q.heureDebut ASC, tbl_poste_id ASC, ph.heureDebut ASC';
+		if(Yii::app()->params['poste_horaire_couleur'] === 1) {
+			$criteria->order = 'q.heureDebut ASC, ph.order ASC, tbl_poste_id ASC, ph.heureDebut ASC';
+		} else {
+			$criteria->order = 'q.heureDebut ASC, tbl_poste_id ASC, ph.heureDebut ASC';
+		}
 		
 		$posteHoraires = PosteHoraire::model()->findAll($criteria);
 		$quarts = Quart::model()->findAll();

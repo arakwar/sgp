@@ -227,7 +227,7 @@ class HoraireController extends Controller
 		time_to_sec(IF(subtime(ph.heureFin,ph.heureDebut)>=0,subtime(ph.heureFin,ph.heureDebut),addtime(subtime(ph.heureFin,ph.heureDebut),'24:00:00')))/3600 AS phHeureReel,
 	    UNIX_TIMESTAMP(CONCAT_WS(' ',ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),ph.heureDebut)) AS tsPHDebut,
 	    UNIX_TIMESTAMP(CONCAT_WS(' ',IF(ph.heureFin>=ph.heureDebut,ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),ADDDATE(ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),1)),ph.heureFin)) AS tsPHFin,
-		u.matricule AS Matricule_horaire, u.id AS ID_pompier_horaire, e.nom AS nom_equipe_garde, e.couleur AS couleur_garde, u2.matricule AS matricule_modification, h.type AS typeH,
+		u.matricule AS Matricule_horaire, u.id AS ID_pompier_horaire, e.nom AS nom_equipe_garde, IF(ph.couleur IS NOT NULL, ph.couleur,e.couleur) AS couleur_garde, u2.matricule AS matricule_modification, h.type AS typeH,
 		h.heureDebut AS hHeureDebut, h.heureFin AS hHeureFin, h.id  AS ID_Horaire,
 		time_to_sec(IF(subtime(h.heureFin,h.heureDebut)>=0,subtime(h.heureFin,h.heureDebut),addtime(subtime(h.heureFin,h.heureDebut),'24:00:00')))/3600 AS hHeureReel,
 	    UNIX_TIMESTAMP(CONCAT_WS(' ',ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),h.heureDebut)) AS tsHDebut,
@@ -290,8 +290,12 @@ class HoraireController extends Controller
 		AND phc.tbl_caserne_id = ".$caserne." AND eg.tbl_caserne_id = ".$caserne."
 		AND e.id IN (".$ids.")
 		AND (ph.dateFin >= '".$dateDebutSuivante->format('Y-m-d')."' OR ph.dateFin IS NULL)
-		AND IF(h.heureDebut <> '00:00:00' AND h.heureFin <> '00:00:00' AND h.heureDebut = h.heureFin,false,true)
-	ORDER BY Jour, q.heureDebut, p.id, ph.heureDebut, h.heureDebut";
+		AND IF(h.heureDebut <> '00:00:00' AND h.heureFin <> '00:00:00' AND h.heureDebut = h.heureFin,false,true)";
+	if(Yii::app()->params['poste_horaire_couleur'] === 1) {
+		  $sql .= "ORDER BY Jour, q.heureDebut, ph.order, p.id, ph.heureDebut, h.heureDebut";
+		} else {
+			$sql .= "ORDER BY Jour, q.heureDebut, p.id, ph.heureDebut, h.heureDebut";
+		}
 	
 	/*AND q.tbl_caserne_id = ".$caserne." AND p.tbl_caserne_id = ".$caserne." AND e.id IN (".$ids.")*/
 			$cn = Yii::app()->db;		
@@ -547,7 +551,7 @@ $sql =
 	time_to_sec(IF(subtime(ph.heureFin,ph.heureDebut)>=0,subtime(ph.heureFin,ph.heureDebut),addtime(subtime(ph.heureFin,ph.heureDebut),'24:00:00')))/3600 AS phHeureReel,
     UNIX_TIMESTAMP(CONCAT_WS(' ',ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),ph.heureDebut)) AS tsPHDebut,
     UNIX_TIMESTAMP(CONCAT_WS(' ',IF(ph.heureFin>=ph.heureDebut,ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),ADDDATE(ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),1)),ph.heureFin)) AS tsPHFin,
-	u.matricule AS Matricule_horaire, u.id AS ID_pompier_horaire, e.nom AS nom_equipe_garde, e.couleur AS couleur_garde, h.type AS typeH,
+	u.matricule AS Matricule_horaire, u.id AS ID_pompier_horaire, e.nom AS nom_equipe_garde, IF(ph.couleur IS NOT NULL, ph.couleur,e.couleur) AS couleur_garde, h.type AS typeH,
 	h.heureDebut AS hHeureDebut, h.heureFin AS hHeureFin, h.id  AS ID_Horaire,
 	time_to_sec(IF(subtime(h.heureFin,h.heureDebut)>=0,subtime(h.heureFin,h.heureDebut),addtime(subtime(h.heureFin,h.heureDebut),'24:00:00')))/3600 AS hHeureReel,
     UNIX_TIMESTAMP(CONCAT_WS(' ',ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),h.heureDebut)) AS tsHDebut,
@@ -563,8 +567,14 @@ WHERE
 	(ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i) < '".$dateDebutSuivante->format('Y-m-d')."')
 	AND phc.tbl_caserne_id = ".$caserne." AND e.id IN (".$ids.")
 	AND (ph.dateFin >= '".date('Y-m-d')."' OR ph.dateFin IS NULL)
-GROUP BY Jour, phId, ID_Horaire
-ORDER BY Jour, q.heureDebut, p.id, ph.heureDebut, h.heureDebut";
+GROUP BY Jour, phId, ID_Horaire";
+
+if(Yii::app()->params['poste_horaire_couleur'] === 1) {
+	$sql .= " ORDER BY Jour, q.heureDebut, ph.order, p.id, ph.heureDebut, h.heureDebut";
+} else {
+	$sql .= " ORDER BY Jour, q.heureDebut, p.id, ph.heureDebut, h.heureDebut";
+}
+
 
 /*AND q.tbl_caserne_id = ".$caserne." AND p.tbl_caserne_id = ".$caserne." AND e.id IN (".$ids.")*/
 		$cn = Yii::app()->db;		
@@ -680,7 +690,7 @@ ORDER BY Jour, q.heureDebut, p.id, ph.heureDebut, h.heureDebut";
 	q.nom AS nomQuart, q.id AS idQuart, q.heureDebut AS qHeureDebut, q.heureFin AS qHeureFin,
 	p.nom AS Poste, p.id AS idPoste, p.diminutif AS diminutifPoste,
 	ph.id AS phId, ph.heureDebut AS phHeureDebut, ph.heureFin AS phHeureFin,
-	u.matricule AS Matricule_horaire, e.couleur AS couleur_garde, u2.matricule AS matricule_modification, h.type AS typeH,
+	u.matricule AS Matricule_horaire, IF(ph.couleur IS NOT NULL, ph.couleur,e.couleur) AS couleur_garde, u2.matricule AS matricule_modification, h.type AS typeH,
 	h.heureDebut AS hHeureDebut, h.heureFin AS hHeureFin, h.id  AS ID_Horaire
 FROM
 	((numbers i1, numbers i2),
