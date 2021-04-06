@@ -10,4 +10,5 @@ return array(
 	'install'=>0,
 	'emailSysteme'  => 'donotreply@ssiedm-dispo.ca',
 	'piwik_id'=>8,
+	'poste_horaire_couleur' => 1
 );

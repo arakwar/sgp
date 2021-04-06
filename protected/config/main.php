@@ -4,10 +4,10 @@
 // Yii::setPathOfAlias('local','path/to/local-folder');
 Yii::setPathOfAlias('chartjs', dirname(__FILE__).'/../extensions/chartjs');
 
-$database = require(dirname(__FILE__).DIRECTORY_SEPARATOR.DOMAINE.DIRECTORY_SEPARATOR.'main_db.php');
+$database = dirname(__FILE__).DIRECTORY_SEPARATOR.DOMAINE.DIRECTORY_SEPARATOR.'main_db.php';
 
 if(YII_DEBUG){
-	$database = require(dirname(__FILE__).DIRECTORY_SEPARATOR.DOMAINE.DIRECTORY_SEPARATOR.'main_db_dev.php');
+	$database = dirname(__FILE__).DIRECTORY_SEPARATOR.DOMAINE.DIRECTORY_SEPARATOR.'main_db_dev.php';
 }
 
 // This is the main Web application configuration. Any writable
@@ -68,17 +68,17 @@ return array(
 		'menu'=>array(
 			'class'=>'ext.menu.SMenu'
 		),
-		'db'=> require(dirname(__FILE__).DIRECTORY_SEPARATOR.DOMAINE.DIRECTORY_SEPARATOR.'main_db.php'),
-		'db_log' => array(
-			'connectionString' => 'mysql:host=localhost;dbname=admin_sgp_log',
-			'emulatePrepare' => true,
-			'username' => 'sgp_externe',
-			'password' => 'fJe2M2Ny6yrHBWYF',
-			'charset' => 'utf8',
-			'enableProfiling'=>true,
-			'enableParamLogging'=>true,
-			'class'      => 'CDbConnection' 
-		),
+		'db'=> require($database),
+		// 'db_log' => (YII_DEBUG)?:array(
+		// 	'connectionString' => 'mysql:host=localhost;dbname=admin_sgp_log',
+		// 	'emulatePrepare' => true,
+		// 	'username' => 'sgp_externe',
+		// 	'password' => 'fJe2M2Ny6yrHBWYF',
+		// 	'charset' => 'utf8',
+		// 	'enableProfiling'=>true,
+		// 	'enableParamLogging'=>true,
+		// 	'class'      => 'CDbConnection' 
+		// ),
 		'mail' => require(dirname(__FILE__).DIRECTORY_SEPARATOR.DOMAINE.DIRECTORY_SEPARATOR.'main_mail.php'),
 		// uncomment the following to enable URLs in path-format
 		/*
@@ -95,31 +95,31 @@ return array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',
         ),
-		'log'=>array(
-			'class'=>'CLogRouter',
-			'routes'=>array(
-/*				array(
-		            'class'=>'CEmailLogRoute',
-		            'levels'=>'error',
-		            'emails'=>'info@tech.swordware.com',
-		            'subject' => 'Log applicatif : '.DOMAINE,
-		        ),
-		        array(
-		            'class'=>'CEmailLogRoute',
-		            'levels'=>'trace, info, error, warning',
-					'categories'=>'Tech.*',
-		            'emails'=>'info@tech.swordware.com',
-		            'subject' => 'Log applicatif : '.DOMAINE,
-		        ),*/
-		        array(
-                    'class'=>'ext.LogDb',
-                    'autoCreateLogTable'=>true,
-                    'connectionID'=>'db_log',
-                    'enabled'=>true,
-                    'levels'=>'warning,error,',//You can replace trace,info,warning,error
-                ),
-			)
-		),
+// 		'log'=>array(
+// 			'class'=>'CLogRouter',
+// 			'routes'=>array(
+// /*				array(
+// 		            'class'=>'CEmailLogRoute',
+// 		            'levels'=>'error',
+// 		            'emails'=>'info@tech.swordware.com',
+// 		            'subject' => 'Log applicatif : '.DOMAINE,
+// 		        ),
+// 		        array(
+// 		            'class'=>'CEmailLogRoute',
+// 		            'levels'=>'trace, info, error, warning',
+// 					'categories'=>'Tech.*',
+// 		            'emails'=>'info@tech.swordware.com',
+// 		            'subject' => 'Log applicatif : '.DOMAINE,
+// 		        ),*/
+// 		        array(
+//                     'class'=>'ext.LogDb',
+//                     'autoCreateLogTable'=>true,
+//                     'connectionID'=>'db_log',
+//                     'enabled'=>true,
+//                     'levels'=>'warning,error,',//You can replace trace,info,warning,error
+//                 ),
+// 			)
+// 		),
 		'mobileDetect' => array(
         	'class' => 'system.ext.MobileDetect.MobileDetect'
     	),

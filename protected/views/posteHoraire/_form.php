@@ -52,6 +52,29 @@
 		<?php echo $form->error($model,'tblCasernes');?>
 	</div>
 
+	<?php
+if(Yii::app()->params['poste_horaire_couleur'] === 1) {
+	?>
+	<div class="row">
+	<?php echo $form->labelEx($model,'couleur'); ?>
+		<?php $this->widget('system.ext.colorpicker.EColorPicker',array(
+			'id' => 'Equipe_couleur',
+			'name' => 'PosteHoraire[couleur]',
+			'mode' => 'textfield',
+			'value' => $model->couleur
+			
+		)); ?>
+		<?php echo $form->error($model,'couleur'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'order'); ?>
+		<?php echo $form->textField($model,'order',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'order'); ?>
+	</div>
+
+	<?php } ?>
+
 </div><!-- form -->
 	<div class="styleButtons">
 		<div class="buttons">

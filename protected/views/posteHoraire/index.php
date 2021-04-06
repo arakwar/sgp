@@ -53,7 +53,10 @@ $this->menu=array(
 					$r++;
 				}
 			}
-			echo '<td rowspan="'.$r.'">';
+			echo '<td rowspan="'.$r.'"';
+			if(Yii::app()->params['poste_horaire_couleur'] === 1)
+				echo ' style="background-color:#'.$ph->couleur.';" ';
+			echo '>';
 			foreach($postes as $p){
 				if($p->id == $poste){
 					echo '<b>'.$p->nom.'</b>';
