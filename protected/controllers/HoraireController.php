@@ -227,7 +227,15 @@ class HoraireController extends Controller
 		time_to_sec(IF(subtime(ph.heureFin,ph.heureDebut)>=0,subtime(ph.heureFin,ph.heureDebut),addtime(subtime(ph.heureFin,ph.heureDebut),'24:00:00')))/3600 AS phHeureReel,
 	    UNIX_TIMESTAMP(CONCAT_WS(' ',ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),ph.heureDebut)) AS tsPHDebut,
 	    UNIX_TIMESTAMP(CONCAT_WS(' ',IF(ph.heureFin>=ph.heureDebut,ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),ADDDATE(ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),1)),ph.heureFin)) AS tsPHFin,
-		u.matricule AS Matricule_horaire, u.id AS ID_pompier_horaire, e.nom AS nom_equipe_garde, IF(ph.couleur IS NOT NULL, ph.couleur,e.couleur) AS couleur_garde, u2.matricule AS matricule_modification, h.type AS typeH,
+		u.matricule AS Matricule_horaire, u.id AS ID_pompier_horaire, e.nom AS nom_equipe_garde, ";
+
+		if(Yii::app()->params['poste_horaire_couleur'] === 1) {
+			$sql .= "IF(ph.couleur IS NOT NULL, ph.couleur,e.couleur) AS couleur_garde,";
+		} else {
+			$sql .= "e.couleur AS couleur_garde,";
+		}
+
+		$sql .= " u2.matricule AS matricule_modification, h.type AS typeH,
 		h.heureDebut AS hHeureDebut, h.heureFin AS hHeureFin, h.id  AS ID_Horaire,
 		time_to_sec(IF(subtime(h.heureFin,h.heureDebut)>=0,subtime(h.heureFin,h.heureDebut),addtime(subtime(h.heureFin,h.heureDebut),'24:00:00')))/3600 AS hHeureReel,
 	    UNIX_TIMESTAMP(CONCAT_WS(' ',ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),h.heureDebut)) AS tsHDebut,
@@ -551,7 +559,15 @@ $sql =
 	time_to_sec(IF(subtime(ph.heureFin,ph.heureDebut)>=0,subtime(ph.heureFin,ph.heureDebut),addtime(subtime(ph.heureFin,ph.heureDebut),'24:00:00')))/3600 AS phHeureReel,
     UNIX_TIMESTAMP(CONCAT_WS(' ',ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),ph.heureDebut)) AS tsPHDebut,
     UNIX_TIMESTAMP(CONCAT_WS(' ',IF(ph.heureFin>=ph.heureDebut,ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),ADDDATE(ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),1)),ph.heureFin)) AS tsPHFin,
-	u.matricule AS Matricule_horaire, u.id AS ID_pompier_horaire, e.nom AS nom_equipe_garde, IF(ph.couleur IS NOT NULL, ph.couleur,e.couleur) AS couleur_garde, h.type AS typeH,
+	u.matricule AS Matricule_horaire, u.id AS ID_pompier_horaire, e.nom AS nom_equipe_garde, ";
+
+		if(Yii::app()->params['poste_horaire_couleur'] === 1) {
+			$sql .= "IF(ph.couleur IS NOT NULL, ph.couleur,e.couleur) AS couleur_garde,";
+		} else {
+			$sql .= "e.couleur AS couleur_garde,";
+		}
+		
+		$sql .= " h.type AS typeH,
 	h.heureDebut AS hHeureDebut, h.heureFin AS hHeureFin, h.id  AS ID_Horaire,
 	time_to_sec(IF(subtime(h.heureFin,h.heureDebut)>=0,subtime(h.heureFin,h.heureDebut),addtime(subtime(h.heureFin,h.heureDebut),'24:00:00')))/3600 AS hHeureReel,
     UNIX_TIMESTAMP(CONCAT_WS(' ',ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i),h.heureDebut)) AS tsHDebut,
@@ -690,7 +706,15 @@ if(Yii::app()->params['poste_horaire_couleur'] === 1) {
 	q.nom AS nomQuart, q.id AS idQuart, q.heureDebut AS qHeureDebut, q.heureFin AS qHeureFin,
 	p.nom AS Poste, p.id AS idPoste, p.diminutif AS diminutifPoste,
 	ph.id AS phId, ph.heureDebut AS phHeureDebut, ph.heureFin AS phHeureFin,
-	u.matricule AS Matricule_horaire, IF(ph.couleur IS NOT NULL, ph.couleur,e.couleur) AS couleur_garde, u2.matricule AS matricule_modification, h.type AS typeH,
+	u.matricule AS Matricule_horaire, ";
+
+	if(Yii::app()->params['poste_horaire_couleur'] === 1) {
+		$sql .= "IF(ph.couleur IS NOT NULL, ph.couleur,e.couleur) AS couleur_garde,";
+	} else {
+		$sql .= "e.couleur AS couleur_garde,";
+	}
+	
+	$sql .= " u2.matricule AS matricule_modification, h.type AS typeH,
 	h.heureDebut AS hHeureDebut, h.heureFin AS hHeureFin, h.id  AS ID_Horaire
 FROM
 	((numbers i1, numbers i2),
