@@ -230,7 +230,7 @@ class HoraireController extends Controller
 		u.matricule AS Matricule_horaire, u.id AS ID_pompier_horaire, e.nom AS nom_equipe_garde, ";
 
 		if(Yii::app()->params['poste_horaire_couleur'] === 1) {
-			$sql .= "IF(ph.couleur IS NOT NULL, ph.couleur,e.couleur) AS couleur_garde,";
+			$sql .= "IF(ph.couleur IS NOT NULL OR ph.couleur != '', ph.couleur,e.couleur) AS couleur_garde,";
 		} else {
 			$sql .= "e.couleur AS couleur_garde,";
 		}
@@ -562,7 +562,7 @@ $sql =
 	u.matricule AS Matricule_horaire, u.id AS ID_pompier_horaire, e.nom AS nom_equipe_garde, ";
 
 		if(Yii::app()->params['poste_horaire_couleur'] === 1) {
-			$sql .= "IF(ph.couleur IS NOT NULL, ph.couleur,e.couleur) AS couleur_garde,";
+			$sql .= "IF(ph.couleur IS NOT NULL OR ph.couleur != '', ph.couleur,e.couleur) AS couleur_garde,";
 		} else {
 			$sql .= "e.couleur AS couleur_garde,";
 		}
@@ -709,7 +709,7 @@ if(Yii::app()->params['poste_horaire_couleur'] === 1) {
 	u.matricule AS Matricule_horaire, ";
 
 	if(Yii::app()->params['poste_horaire_couleur'] === 1) {
-		$sql .= "IF(ph.couleur IS NOT NULL, ph.couleur,e.couleur) AS couleur_garde,";
+		$sql .= "IF(ph.couleur IS NOT NULL OR ph.couleur != '', ph.couleur,e.couleur) AS couleur_garde,";
 	} else {
 		$sql .= "e.couleur AS couleur_garde,";
 	}

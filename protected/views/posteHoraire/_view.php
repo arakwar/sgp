@@ -20,10 +20,10 @@ if(Yii::app()->params['poste_horaire_couleur'] === 1) {
 	?>
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('couleur')); ?>:</b>
-	<?php echo CHtml::encode($data->poste->nom); ?><br />
+	<?php echo CHtml::encode($data->couleur); ?><br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('order')); ?>:</b>
-	<?php echo CHtml::encode($data->poste->nom); ?><br />
+	<?php echo CHtml::encode($data->order); ?><br />
 
 	<?php } ?>
 	

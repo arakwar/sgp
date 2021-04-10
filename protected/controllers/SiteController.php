@@ -703,7 +703,15 @@ ORDER BY valideQuart.heureTri, DateQuart, q.heureDebut, ordre
 	q.nom AS nomQuart, q.id AS idQuart, q.heureDebut AS qHeureDebut, q.heureFin AS qHeureFin,
 	p.nom AS Poste, p.id AS idPoste, p.diminutif AS diminutifPoste,
 	ph.id AS phId, ph.heureDebut AS phHeureDebut, ph.heureFin AS phHeureFin,
-	u.matricule AS Matricule_horaire, e.couleur AS couleur_garde, u2.matricule AS matricule_modification, h.type AS typeH,
+	u.matricule AS Matricule_horaire, ";
+	
+	if(Yii::app()->params['poste_horaire_couleur'] === 1) {
+		$sql .= "IF(ph.couleur IS NOT NULL OR ph.couleur != '', ph.couleur,e.couleur) AS couleur_garde,";
+	} else {
+		$sql .= "e.couleur AS couleur_garde,";
+	}
+
+	$sql .= " u2.matricule AS matricule_modification, h.type AS typeH,
 	h.heureDebut AS hHeureDebut, h.heureFin AS hHeureFin, h.id  AS ID_Horaire
 FROM
 	((numbers i1, numbers i2),
@@ -719,8 +727,13 @@ WHERE
 	(ADDDATE('".$dateDebut->format('Y-m-d')."', i2.i*10+i1.i) < '".$dateDebutSuivante->format('Y-m-d')."')
 	AND phc.tbl_caserne_id = :caserne
 	AND (ph.dateFin >= '".$dateDebutSuivante->format('Y-m-d')."' OR ph.dateFin IS NULL)
-GROUP BY Poste, nomQuart, Jour
-ORDER BY q.heureDebut, p.id, Jour, h.heureDebut, ph.heureDebut";
+GROUP BY Poste, nomQuart, Jour ";
+
+if(Yii::app()->params['poste_horaire_couleur'] === 1) {
+	$sql .= "ORDER BY q.heureDebut, ph.order, p.id, Jour, h.heureDebut, ph.heureDebut";
+} else {
+	$sql .= "ORDER BY q.heureDebut, p.id, Jour, h.heureDebut, ph.heureDebut";
+}
 		
 		$cn = Yii::app()->db;
 		$cm = $cn->createCommand($sql);
@@ -741,7 +754,15 @@ ORDER BY q.heureDebut, p.id, Jour, h.heureDebut, ph.heureDebut";
 	q.nom AS nomQuart, q.id AS idQuart, q.heureDebut AS qHeureDebut, q.heureFin AS qHeureFin,
 	p.nom AS Poste, p.id AS idPoste, p.diminutif AS diminutifPoste,
 	ph.id AS phId, ph.heureDebut AS phHeureDebut, ph.heureFin AS phHeureFin,
-	u.matricule AS Matricule_horaire, e.couleur AS couleur_garde, u2.matricule AS matricule_modification, h.type AS typeH,
+	u.matricule AS Matricule_horaire, ";
+	
+	if(Yii::app()->params['poste_horaire_couleur'] === 1) {
+		$sql2 .= "IF(ph.couleur IS NOT NULL OR ph.couleur != '', ph.couleur,e.couleur) AS couleur_garde,";
+	} else {
+		$sql2 .= "e.couleur AS couleur_garde,";
+	}
+
+	$sql2 .= "  u2.matricule AS matricule_modification, h.type AS typeH,
 	h.heureDebut AS hHeureDebut, h.heureFin AS hHeureFin, h.id  AS ID_Horaire
 FROM
 	((numbers i1, numbers i2),
@@ -758,8 +779,13 @@ WHERE
 	(ADDDATE('".$dateDebut2->format('Y-m-d')."', i2.i*10+i1.i) < '".$dateDebutSuivante2->format('Y-m-d')."')
 	AND phc.tbl_caserne_id = :caserne
 	AND (ph.dateFin >= '".$dateDebutSuivante2->format('Y-m-d')."' OR ph.dateFin IS NULL)
-GROUP BY Poste, nomQuart, Jour
-ORDER BY q.heureDebut, p.id, Jour, h.heureDebut, ph.heureDebut";
+GROUP BY Poste, nomQuart, Jour ";
+
+if(Yii::app()->params['poste_horaire_couleur'] === 1) {
+	$sql2 .= "ORDER BY q.heureDebut, ph.order, p.id, Jour, h.heureDebut, ph.heureDebut";
+} else {
+	$sql2 .= "ORDER BY q.heureDebut, p.id, Jour, h.heureDebut, ph.heureDebut";
+}
 			
 			$cn = Yii::app()->db;
 			$cm = $cn->createCommand($sql2);
