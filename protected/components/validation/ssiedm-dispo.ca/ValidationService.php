@@ -95,7 +95,7 @@ class ValidationService extends CBehavior{
 			if($row['HeureTotal'] > $heureMaxSemaine){
 				if(!in_array($row['matricule'],$tbl_id)){
 					$ssql = "SELECT
-								r.matricule AS mat_remp
+								u.matricule AS mat_remp
 							FROM 
 								((numbers i1, numbers i2), 
 								 (tbl_quart q LEFT JOIN (tbl_poste_horaire ph INNER JOIN tbl_poste p ON p.id=ph.tbl_poste_id) ON ph.tbl_quart_id=q.id)) 
